@@ -98,41 +98,47 @@ a {
   text-decoration: none;
 }
 
-main {
+body {
   background-color: #ededf6;
 }
 
 .container {
-  display: inline-block;
+  background-color: teal;
+  height: 200px;
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   position: relative;
 }
 
 .About-Me {
-  width: 30%;
-  display: inline-block;
+  width: 10%;
   color: #1abc9c;
-  margin-top: 100px;
-  margin-left: 50px;
+  position: absolute;
+  left: 10%;
   font-family: monospace;
   font-size: 50px;
 }
 
 .vertical {
+  display: inline-block;
   border-left: 3px solid #1abc9c;
-  height: 100%;
+  height: 60%;
   position: absolute;
-  left: 35%;
-  margin-left: -50px;
+  top: 40px;
+  left: 27%;
 }
 
-.introduction {
+.introduction p {
   overflow-wrap: break-word;
   color: #1abc9c;
-  float: right;
-  width: 40%;
-  margin-top: 100px;
-  margin-right: 20%;
-  height: 300px;
+  margin-left: auto;
+  width: 60%;
+  margin-right: 50px;
+  height: 60%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: black;
 }
