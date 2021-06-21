@@ -185,7 +185,7 @@ a {
 
 .vertical2 {
   display: inline-block;
-  border-left: 3px solid black;
+  border-left: 3px solid #1abc9c;
   height: 100%;
   position: absolute;
   left: 27%;
