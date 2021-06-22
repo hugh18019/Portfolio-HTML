@@ -61,6 +61,14 @@ body {
   background-color: teal;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
 header {
   /* vertically align the sub-header */
   display: flex;
@@ -105,6 +113,7 @@ a {
   text-decoration: none;
 }
 
+/* For the strip below the header */
 .top-img-strip {
   height: 200px;
   position: relative;
@@ -123,72 +132,109 @@ a {
   right: 16px;
 }
 
+/* For the About Me section */
 .container {
-  background-color: teal;
+  /* background-color: teal;
   height: 200px;
+  width: 100%;
+
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
   flex-direction: row;
   align-items: center;
   justify-content: center;
 
-  position: relative;
+  position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .section-title {
-  width: 10%;
+  /* width: 10%;
   color: #1abc9c;
   position: absolute;
   left: 10%;
   font-family: monospace;
-  font-size: 50px;
+  font-size: 50px; */
+
+  /* border: 3px solid whitesmoke; */
+  width: 7%;
+  overflow-wrap: break-word;
+  margin-left: 10%;
 }
 
 .vertical {
-  display: inline-block;
+  /* display: inline-block;
   border-left: 3px solid #1abc9c;
   height: 60%;
   position: absolute;
   top: 40px;
-  left: 27%;
+  left: 27%; */
+  border: 3px solid whitesmoke;
+  margin-left: 10%;
 }
 
-.introduction p {
+.introduction {
+  /* margin-left: auto;
+  margin-right: 50px;
+  width: 60%; */
+  border: 3px solid whitesmoke;
+  /* margin-left: 50px; */
+
+  width: 60%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: 48px;
+}
+
+/* .introduction p {
   overflow-wrap: break-word;
   color: #1abc9c;
   margin-left: auto;
-  width: 60%;
   margin-right: 50px;
   height: 60%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: black;
-}
+  background-color: black; 
+} */
 
+/* For the Work section */
 .container2 {
-  background-color: teal;
+  /* background-color: teal;
   height: 80%;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .section-title2 {
-  width: 10%;
+  /* width: 10%;
   color: #1abc9c;
   position: absolute;
   left: 10%;
   font-family: monospace;
-  font-size: 50px;
+  font-size: 50px; */
   /* make the title "work" appear at the top of its container */
-  margin-bottom: auto;
+  /* margin-bottom: auto; */
+
+  /* border: 3px solid whitesmoke; */
+  width: 7%;
+  margin-left: 10%;
 }
 
 .vertical2 {
-  display: inline-block;
+  /* display: inline-block;
   border-left: 3px solid #1abc9c;
   height: 100%;
   position: absolute;
-  left: 27%;
+  left: 27%; */
+  border: 3px solid whitesmoke;
+  margin-left: 10%;
 }
 
 .works-container {
@@ -209,4 +255,23 @@ a {
   margin-left: auto;
   margin-right: 50px; */
   height: 60%;
+}
+
+/* @media screen and (max-width: 992px) and (min-width: 769px) {
+  .container {
+    width: 47%;
+  }
+  .container2 {
+    width: 47%;
+  }
+} */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  border: 3px solid whitesmoke;
 }
