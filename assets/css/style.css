@@ -164,6 +164,7 @@ a {
   width: 7%;
   overflow-wrap: break-word;
   margin-left: 10%;
+  margin-top: 50px;
 }
 
 .vertical {
@@ -188,6 +189,7 @@ a {
   height: 60%;
   margin-left: auto;
   margin-right: 50px;
+  margin-top: 50px;
 }
 
 /* .introduction p {
@@ -274,6 +276,9 @@ a {
     width: 20%;
     flex-wrap: nowrap;
   }
+  .container .introduction {
+    margin-top: 25px;
+  }
 
   .container2 {
     flex-direction: column;
@@ -283,6 +288,9 @@ a {
     text-align: center;
     width: 20%;
     flex-wrap: nowrap;
+  }
+  .container2 .works-container {
+    margin-top: 25px;
   }
 }
 
