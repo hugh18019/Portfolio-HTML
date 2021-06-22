@@ -256,6 +256,13 @@ a {
   height: 60%;
 }
 
+#main-work-image {
+  background-image: url('../images/main_work.jpg');
+  display: block;
+  height: 60%;
+  width: 100%;
+}
+
 @media screen and (max-width: 992px) and (min-width: 769px) {
   .container h2 div {
     flex-direction: column;
