@@ -1,74 +1,23 @@
-/* .box {
-  width: 20%;
-  border: 5px solid black;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-
-.gfg {
-  margin: 3%;
-  position: relative;
-}
-
-.first-txt {
-  color: white;
-  position: absolute;
-  top: 17px;
-  left: 50px;
-}
-
-.second-txt {
-  color: white;
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-}
-
-img {
-  width: 100%;
-}
-
-.container {
-  display: flex;
-}
-
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  color: white;
-}
-
-.vertical {
-  border-left: 3px solid black;
-  height: 200px;
-  position: absolute;
-  left: 30%;
-  margin-left: -3px;
-  top: 300px;
-}
-
-.introduction {
-} */
-
+/* Eliminates the blank space between the body section and the browser window */
+/* The purpose is to make every part of the site span the whole browser window */
 html,
 body {
   margin: 0;
 }
 
+/* Sets the background color of the entire website to be teal*/
 body {
   background-color: teal;
 }
 
+/* Make the main section as wide as the body section */
 main {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  flex-direction: column;
-  position: relative;
 }
 
+/* Sets the paddings and configures the font-family, background color and text
+color of the heading.
+  Makes the heading a flexbox just for the centering of the sub-header */
 header {
   /* vertically align the sub-header */
   display: flex;
@@ -82,15 +31,22 @@ header {
   color: white;
 }
 
+/* Configures the width and height and background color of the sub-header
+   where it contains the name of the developer
+   Makes the sub-header flexbox that appears inline with the navigation bar */
 #sub-header {
   display: inline-flex;
   align-items: center;
   width: 15%;
   height: 50px;
-  /* background-color: #2a607c; */
   background-color: teal;
 }
 
+/* Configures the font-family and font size of the text inside navigation bar
+   Makes the navigation bar appear on the right side of the header since
+   float:right does not work for flex items, and offsets a bit from the right
+   of the header
+*/
 header nav {
   margin-right: 20px;
   /* makes this flex item align with the right of its container */
@@ -99,31 +55,45 @@ header nav {
   font-size: 20px;
 }
 
+/* Omits the symbols in front of each link in the navigation bar */
 header nav ul {
   list-style-type: none;
 }
 
+/* Makes links in the navigation bar all on the same line
+   and creates a margin of 25px between them */
 header nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
+/* Sets the text in each link in the navigation bar white
+   without any decorations */
 a {
   color: white;
   text-decoration: none;
 }
 
 /* For the strip below the header */
+/* Sets the height of the container of the long image below header to be 200px
+   and sets its position to be relative for positioning its subtitle
+   at its bottom right
+*/
 .top-img-strip {
   height: 200px;
   position: relative;
 }
 
+/* Makes the long image below header to span all of its container */
 .top-img-strip img {
   height: 100%;
   width: 100%;
 }
 
+/* 
+This is the class responsible for making the subtitles of every image
+appear at the bottom right of those images
+*/
 .bottom-right {
   color: white;
   position: absolute;
@@ -133,20 +103,10 @@ a {
 }
 
 /* For the About Me section */
+/* Makes the container of the About Me section a flex box that contains 
+   three items, the section title, the vertical bar, and the introduction paragraph
+*/
 .container {
-  /* background-color: teal;
-  height: 200px;
-  width: 100%;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  position: relative; */
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -154,39 +114,25 @@ a {
   margin-bottom: 20px;
 }
 
+/* Configures the positioning of the title of the About Me section
+and makes the word "Me" appear on a second line */
 .section-title {
-  /* width: 10%;
-  color: #1abc9c;
-  position: absolute;
-  left: 10%;
-  font-family: monospace;
-  font-size: 50px; */
-
-  /* border: 3px solid whitesmoke; */
   width: 8%;
+  /* makes "Me" appear on a second line */
   overflow-wrap: break-word;
   margin-left: 10%;
   margin-top: 50px;
 }
 
+/* The first line creates the 2 vertical bars
+   and the seconde positions the vertical bars */
 .vertical {
-  /* display: inline-block;
-  border-left: 3px solid #1abc9c;
-  height: 60%;
-  position: absolute;
-  top: 40px;
-  left: 27%; */
   border: 3px solid whitesmoke;
   margin-left: 10%;
 }
 
+/* positions the introduction paragraph in the About Me section */
 .introduction {
-  /* margin-left: auto;
-  margin-right: 50px;
-  width: 60%; */
-  border: 3px solid whitesmoke;
-  /* margin-left: 50px; */
-
   width: 60%;
   height: 60%;
   margin-left: auto;
@@ -194,51 +140,26 @@ a {
   margin-top: 50px;
 }
 
-/* .introduction p {
-  overflow-wrap: break-word;
-  color: #1abc9c;
-  margin-left: auto;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */
-
 /* For the Work section */
+/* Makes the container of the Work section a flex box that contains 
+   three items, the section title, the vertical bar, and the 
+   images of the projects
+   Creates a margin of 20px at the bottom
+ */
 .container2 {
-  /* background-color: teal;
-  height: 80%;
   display: flex;
   flex-wrap: wrap;
-  position: relative; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
   margin-bottom: 20px;
 }
 
+/* Positions the title item of the Work section */
 .section-title2 {
-  /* width: 10%;
-  color: #1abc9c;
-  position: absolute;
-  left: 10%;
-  font-family: monospace;
-  font-size: 50px; */
-  /* make the title "work" appear at the top of its container */
-  /* margin-bottom: auto; */
-
-  /* border: 3px solid whitesmoke; */
   width: 8%;
   margin-left: 10%;
 }
 
-.vertical2 {
-  /* display: inline-block;
-  border-left: 3px solid #1abc9c;
-  height: 100%;
-  position: absolute;
-  left: 27%; */
-  border: 3px solid whitesmoke;
-  margin-left: 10%;
-}
-
+/* Makes the container of the project images a flexbox 
+   so that the smaller images can flow when the browser is resized */
 .works-container {
   display: flex;
   flex-wrap: wrap;
@@ -249,9 +170,18 @@ a {
   margin-right: 50px;
 }
 
+/* This two lines make the largest image shrink or grow in size
+   when the browser is resized */
 .works-container img {
   max-width: 100%;
   height: auto;
+}
+
+.other-works {
+  display: block;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -319,28 +249,8 @@ footer p {
     width: 20%;
     flex-wrap: nowrap;
   }
-  /* .container2 .works-container {
-    margin-top: 25px;
-  } */
 
   .works-container {
-    /* background-color: black;
-    transform: scale(0.5, 0.6);
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0; */
-
-    /* transform: scale(0.5, 0.6); */
-
-    /* margin-left: auto;
-    margin-right: 50px;
-    margin-top: 50px;
-    width: 60%; */
-    /* background-color: black;
-    display: flex;
-    flex-direction: row; */
-
     margin-top: 25px;
   }
 }
