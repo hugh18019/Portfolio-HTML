@@ -117,6 +117,9 @@ appear at the bottom right of those images
 /* Configures the positioning of the title of the About Me section
 and makes the word "Me" appear on a second line */
 .section-title {
+  /* sets the width so that the container cannot display the word "Me"
+  in the same line as the word "About" and is therefore wrapped to a 
+  second line */
   width: 8%;
   /* makes "Me" appear on a second line */
   overflow-wrap: break-word;
@@ -177,6 +180,11 @@ and makes the word "Me" appear on a second line */
   height: auto;
 }
 
+/* Creates a separate single container for all the 4 smaller project images
+   and makes them display as blocks so that they do not appear rigth next to 
+   the larger image, and makes them each flow to a new line when the browser
+   is reduced in size
+*/
 .other-works {
   display: block;
   width: 90%;
@@ -184,6 +192,11 @@ and makes the word "Me" appear on a second line */
   flex-wrap: wrap;
 }
 
+/* This is the box that contains each of the project images
+   The purpose of this container is to help position the subtitles
+   at the bottom right, by setting the its position to be relative
+   and by setting the position of the .bottom-right objects to be 
+   absolute which is done in the definition of the .bottom-right class */
 .box {
   position: relative;
 }
@@ -210,16 +223,17 @@ footer p {
   text-align: center;
 }
 
+/* Setts the color of the email inside the footer to be white */
 #email {
   color: white;
 }
 
+/* This is for the responsive feature of the section title "About Me" 
+   in the About Me section
+   The purpose of this block of code is to maintain the original width of
+   the container of the title "About Me" so that when the browser size is 
+   sufficiently large, the word "Me" would be wrapped to a second line */
 @media screen and (max-width: 992px) and (min-width: 769px) {
-  /* .container h2 div {
-    flex-direction: column;
-    width: 47%;
-  } */
-
   .container .section-title {
     width: 8%;
   }
@@ -253,14 +267,4 @@ footer p {
   .works-container {
     margin-top: 25px;
   }
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.item {
-  border: 3px solid whitesmoke;
 }
