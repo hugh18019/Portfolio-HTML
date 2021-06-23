@@ -22,7 +22,7 @@ The footer contains two links that can jump to my LinkedIn page and my GitHub pa
 
 ## Links
 
-Link to deployed site: https://hugh18019.github.io/Portfolio/
+Link to deployed site: https://hugh18019.github.io/Portfolio/ \
 Link to code repo: https://github.com/hugh18019/Portfolio
 
 ## License & copyright
