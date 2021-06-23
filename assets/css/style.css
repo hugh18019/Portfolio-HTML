@@ -150,6 +150,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  height: 60%;
+  margin-bottom: 20px;
 }
 
 .section-title {
@@ -209,6 +211,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  margin-bottom: 20px;
 }
 
 .section-title2 {
@@ -247,7 +250,7 @@ a {
 }
 
 .works-container img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -292,7 +295,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .container {
     flex-direction: column;
     width: 90%;
