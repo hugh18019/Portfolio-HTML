@@ -239,31 +239,43 @@ footer p {
   }
 }
 
+/* The responsive feature of the site for smaller browser sizes */
 @media screen and (max-width: 769px) {
+  /* Changes the orientation of the items inside the About Me section
+     from horizontal to vertical when the browser window is reduced in size */
   .container {
     flex-direction: column;
     width: 90%;
   }
+  /* When the browser's width gets smaller than 769px, increases the width
+     of the title "About Me" from 8% to 20% and disable wrapping so that individual letters within
+     each word do not get wrapped to new lines */
   .container .section-title {
-    text-align: center;
     width: 20%;
     flex-wrap: nowrap;
   }
+  /* When the orientation is set to vertical, creates a margin between
+     the introduction paragraph and the then vertical bar which is now horizontal */
   .container .introduction {
     margin-top: 25px;
   }
 
+  /* Changes the orientation of the items inside the About Me section
+     from horizontal to vertical when the browser window is reduced in size */
   .container2 {
     flex-direction: column;
-    justify-content: flex-start;
     width: 90%;
   }
+  /* When the browser's width gets smaller than 769px, increases the width
+     of the title "Work" from 8% to 20% and disable wrapping so that individual letters within
+     each word do not get wrapped to new lines */
   .container2 .section-title2 {
-    text-align: center;
     width: 20%;
     flex-wrap: nowrap;
   }
 
+  /* When the orientation is set to vertical, creates a margin between
+     the project images and the then vertical bar which is now horizontal */
   .works-container {
     margin-top: 25px;
   }
