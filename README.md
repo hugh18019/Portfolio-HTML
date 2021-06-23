@@ -20,6 +20,12 @@ Each project image is a hylink by itself that links to its corresponding GitHub 
 The layout of the site adapts to both the shrinking and enlarging of the browser window. However this feature is not completely polished as of right now.
 The footer contains two links that can jump to my LinkedIn page and my GitHub page.
 
+Here is a few screenshots of the features:
+
+![Navigation_bar](Gif1.gif 'Navigator Bar')
+
+![Hyperlinks](Gif2.gif 'Hyperlinks')
+
 ## Links
 
 Link to deployed site: https://hugh18019.github.io/Portfolio/ \
