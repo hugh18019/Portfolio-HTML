@@ -102,6 +102,14 @@ appear at the bottom right of those images
   right: 16px;
 }
 
+.top-right {
+  color: white;
+  position: absolute;
+  float: right;
+  top: 8px;
+  right: 16px;
+}
+
 /* For the About Me section */
 /* Makes the container of the About Me section a flex box that contains 
    three items, the section title, the vertical bar, and the introduction paragraph
@@ -199,6 +207,14 @@ and makes the word "Me" appear on a second line */
    absolute which is done in the definition of the .bottom-right class */
 .box {
   position: relative;
+}
+
+#GitHub-Links {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Creates a padding of 30px around the text in the footer,
